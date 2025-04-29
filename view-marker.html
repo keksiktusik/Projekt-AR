@@ -6,8 +6,15 @@
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar-nft.min.js"></script>
   <style>
-    body, html { margin: 0; padding: 0; overflow: hidden; }
-    a-scene { width: 100vw; height: 100vh; }
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    a-scene {
+      width: 100vw;
+      height: 100vh;
+    }
   </style>
 </head>
 <body>
@@ -27,7 +34,7 @@
     };
 
     const modelUrl = symbol && modelMap[symbol]
-      ? `models/${modelMap[symbol]}`  // ⬅️ Lokalnie z tej samej domeny
+      ? `models/${modelMap[symbol]}`
       : null;
 
     if (modelUrl) {
